@@ -133,7 +133,7 @@ const resultCardStyle = {
   color: "#b2fab4"
 };
 
-export default function Testing() {
+export default function MachineLearning() {
   const [difficulty, setDifficulty] = useState('easy');
   const [question, setQuestion] = useState('');
   const [userAnswer, setUserAnswer] = useState('');
@@ -152,7 +152,7 @@ export default function Testing() {
   const handleGenerateQuestion = async () => {
     setLoading(true);
     try {
-      const prompt = `Assume I am a fresher who has just joined an IT company in a tester role. I want to get familiar with the typical tasks and coding questions I am likely to face in this role at a multinational company (MNC). Please provide a sample coding question related to testing that a tester would commonly be assigned in an MNC, along with clear and detailed specifications that follow industry practices. The difficulty level should be ${difficulty}. Return only the question and specifications, without any explanations or answers. The question should be suitable for implementation in any programming language or testing tool, based on the user's preference.`;
+      const prompt = `Assume I am a fresher who has just joined an IT company in a Machine Learning developer role. I want to get familiar with the typical tasks and coding questions I am likely to face in this role at a multinational company (MNC). Please provide a sample coding question related to machine learning that an ML developer would commonly be assigned in an MNC, along with clear and detailed specifications that follow industry practices. The difficulty level should be ${difficulty}. Return only the question and specifications, without any explanations or answers. The question should be suitable for implementation in any programming language or framework, based on the user's preference.`;
 
       const response = await fetch(API_ENDPOINT, {
         method: 'POST',
@@ -193,7 +193,7 @@ export default function Testing() {
     setLoading(true);
 
     try {
-      const prompt = `You are a testing assistant. Evaluate the following answer to the given question. Only check for major logic or syntax errors and neglect very minute errors. Return the correctness percentage as a number, a list of corrections as descriptive words (not code), and the fully correct code separately.
+      const prompt = `You are a machine learning code reviewing assistant. Evaluate the following answer to the given question. Only check for major logic or syntax errors and neglect very minute errors. Return the correctness percentage as a number, a list of corrections as descriptive words (not code), and the fully correct code separately.
 
 Question:
 ${question}
@@ -268,9 +268,9 @@ Respond in the following JSON format ONLY:
         </Link>
 
         <div style={headerStyle}>
-          <h1 style={titleStyle}>Quality Assurance</h1>
+          <h1 style={titleStyle}>Machine Learning</h1>
           <p style={{ fontSize: "1.1rem", color: "#e0e0e0", opacity: 0.85 }}>
-            Ensure software quality through comprehensive testing strategies
+            Develop intelligent systems with AI and machine learning technologies
           </p>
         </div>
 
