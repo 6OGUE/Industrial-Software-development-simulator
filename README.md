@@ -1,24 +1,27 @@
 🏭 Industrial Software Development Simulator
 
-A React + Vite-powered AI web app that simulates real-world software development problems, giving users a taste of challenges faced in actual IT industry environments.
-Powered by the Google Gemini API, this tool is designed to help aspiring and junior developers gain hands-on experience across different software fields.
+Industrial Software Development Simulator is an AI-powered web application built with React and Vite that simulates real-world software development scenarios.
 
->> Features
+The platform helps aspiring and junior developers experience the kind of challenges they might face in real IT industry environments. Powered by the Google Gemini API, it offers intelligent feedback and learning opportunities across multiple software domains.
 
-✅ Random Real-World Problems
-Get randomly generated questions based on real industry scenarios.
+🚀 Features
 
-✅ AI Evaluation
-Your code is evaluated using the Google Gemini API to provide:
+✅ Real-World Problem Generation
+Automatically generates random, industry-relevant coding problems.
 
-✅ Correctness Percentage
+✅ AI-Powered Code Evaluation
+Uses the Google Gemini API to assess user-submitted code, providing:
 
-✅Improvement Suggestions (without revealing the full solution)
+✔️ Correctness percentage
 
-✅ Show Solution (Optional)
-You can choose to reveal the correct code by clicking the "Show Correct Code" button.
+✔️ Constructive suggestions (without revealing the full solution)
 
->> Covers 4 Key Domains:
+✅ Optional Solution Reveal
+Users can choose to view the complete correct solution by clicking the "Show Correct Code" button.
+
+🧩 Supported Domains
+
+The simulator currently supports challenges in the following fields:
 
 Frontend Development
 
@@ -28,12 +31,18 @@ Software Testing
 
 Machine Learning
 
-🛠️ Built With
+🛠️ Tech Stack
+
 React
+
 Vite
+
 Google Gemini API
 
 📦 Getting Started
+
+Follow these steps to set up the project locally:
+
 # Clone the repository
 git clone https://github.com/your-username/industrial-software-dev-simulator.git
 
@@ -43,17 +52,17 @@ cd industrial-software-dev-simulator
 # Install dependencies
 npm install
 
-# Run the app
+# Start the development server
 npm run dev
 
-🧪 Usage
+🧪 How to Use
 
-🔴Select a domain (Frontend, Backend, Testing, or ML).
+🔹 Select a domain: Frontend, Backend, Testing, or Machine Learning
 
-🔴Get a random coding challenge.
+🔹 Receive a randomly generated industry-style coding challenge
 
-🔴Submit your solution.
+🔹 Submit your code solution
 
-🔴Get feedback, suggestions, and correctness score.
+🔹 View AI-generated feedback including correctness score and improvement suggestions
 
-🔴Reveal full solution if needed.
+🔹 Optionally, reveal the complete correct solution
