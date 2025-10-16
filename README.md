@@ -3,7 +3,7 @@
 A React + Vite-powered AI web app that simulates real-world software development problems, giving users a taste of challenges faced in actual IT industry environments.
 Powered by the Google Gemini API, this tool is designed to help aspiring and junior developers gain hands-on experience across different software fields.
 
-🔴 Features
+>> Features
 
 ✅ Random Real-World Problems
 Get randomly generated questions based on real industry scenarios.
@@ -18,7 +18,7 @@ Your code is evaluated using the Google Gemini API to provide:
 ✅ Show Solution (Optional)
 You can choose to reveal the correct code by clicking the "Show Correct Code" button.
 
-🔴 Covers 4 Key Domains:
+>> Covers 4 Key Domains:
 
 Frontend Development
 
