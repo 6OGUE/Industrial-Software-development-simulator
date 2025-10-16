@@ -84,8 +84,8 @@ const selectStyle = {
   fontSize: "16px",
   borderRadius: "8px",
   border: "1px solid rgba(255, 255, 255, 0.2)",
-  backgroundColor: "rgba(255, 255, 255, 0.05)",
-  color: "white",
+  backgroundColor: "rgba(255, 255, 255, 0.96)",
+  color: "black",
   cursor: "pointer",
   transition: "all 0.3s ease"
 };
@@ -152,7 +152,7 @@ export default function Testing() {
   const handleGenerateQuestion = async () => {
     setLoading(true);
     try {
-      const prompt = `Assume I am a fresher who has just joined an IT company in a tester role. I want to get familiar with the typical tasks and coding questions I am likely to face in this role at a multinational company (MNC). Please provide a sample coding question related to testing that a tester would commonly be assigned in an MNC, along with clear and detailed specifications that follow industry practices. The difficulty level should be ${difficulty}. Return only the question and specifications, without any explanations or answers. The question should be suitable for implementation in any programming language or testing tool, based on the user's preference.`;
+      const prompt = `Assume I am a fresher who has just joined an IT company in a tester role. I want to get familiar with the typical tasks and coding questions I am likely to face in this role at a multinational company (MNC). Please provide a sample coding question related to testing that a tester would commonly be assigned in an MNC, along with clear and detailed specifications that follow industry practices. The difficulty level should be STRICTLY ${difficulty}.Make very sure that the difficulty level is correctly obeyed. Return only the question and specifications, without any explanations or answers. The question should be suitable for implementation in any programming language or testing tool, based on the user's preference.`;
 
       const response = await fetch(API_ENDPOINT, {
         method: 'POST',
@@ -318,12 +318,23 @@ Respond in the following JSON format ONLY:
         {question && (
           <>
             <textarea
-              placeholder="Enter your answer here..."
-              value={userAnswer}
-              onChange={(e) => setUserAnswer(e.target.value)}
-              rows={12}
-              style={textareaStyle}
-            />
+  placeholder="Enter your answer here..."
+  value={userAnswer}
+  onChange={(e) => setUserAnswer(e.target.value)}
+  rows={12}
+  style={textareaStyle}
+  onKeyDown={(e) => {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      const cursorPosition = e.target.selectionStart;
+      const newValue = userAnswer.slice(0, cursorPosition) + '\t' + userAnswer.slice(cursorPosition);
+      setUserAnswer(newValue);
+      e.target.selectionStart = cursorPosition + 1;
+      e.target.selectionEnd = cursorPosition + 1;
+    }
+  }}
+/>
+
 
             <button
               onClick={handleSubmitAnswer}
