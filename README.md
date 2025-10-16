@@ -1,27 +1,27 @@
-🏭 Industrial Software Development Simulator
+Industrial Software Development Simulator
 
-Industrial Software Development Simulator is an AI-powered web application built with React and Vite that simulates real-world software development scenarios.
+Industrial Software Development Simulator is an AI-powered web application built with React and Vite. It simulates real-world software development problems to help users—especially aspiring and junior developers—experience the types of coding challenges faced in the IT industry.
 
-The platform helps aspiring and junior developers experience the kind of challenges they might face in real IT industry environments. Powered by the Google Gemini API, it offers intelligent feedback and learning opportunities across multiple software domains.
+The platform uses the Google Gemini API to generate problems, evaluate code, and provide feedback, creating an interactive and realistic development simulation.
 
-🚀 Features
+Features
 
-✅ Real-World Problem Generation
+Real-World Problem Simulation
 Automatically generates random, industry-relevant coding problems.
 
-✅ AI-Powered Code Evaluation
-Uses the Google Gemini API to assess user-submitted code, providing:
+AI-Powered Evaluation
+Submissions are analyzed using the Google Gemini API to provide:
 
-✔️ Correctness percentage
+A correctness percentage
 
-✔️ Constructive suggestions (without revealing the full solution)
+Constructive suggestions without revealing the complete solution
 
-✅ Optional Solution Reveal
-Users can choose to view the complete correct solution by clicking the "Show Correct Code" button.
+Optional Solution Reveal
+Users can choose to view the correct solution by clicking the "Show Correct Code" button.
 
-🧩 Supported Domains
+Supported Domains
 
-The simulator currently supports challenges in the following fields:
+The simulator currently supports problems in the following areas:
 
 Frontend Development
 
@@ -31,7 +31,7 @@ Software Testing
 
 Machine Learning
 
-🛠️ Tech Stack
+Tech Stack
 
 React
 
@@ -39,9 +39,9 @@ Vite
 
 Google Gemini API
 
-📦 Getting Started
+Getting Started
 
-Follow these steps to set up the project locally:
+To run the project locally:
 
 # Clone the repository
 git clone https://github.com/your-username/industrial-software-dev-simulator.git
@@ -55,14 +55,14 @@ npm install
 # Start the development server
 npm run dev
 
-🧪 How to Use
+How to Use
 
-🔹 Select a domain: Frontend, Backend, Testing, or Machine Learning
+Select a domain (Frontend, Backend, Testing, or Machine Learning)
 
-🔹 Receive a randomly generated industry-style coding challenge
+Receive a randomly generated coding challenge
 
-🔹 Submit your code solution
+Write and submit your solution
 
-🔹 View AI-generated feedback including correctness score and improvement suggestions
+Review the AI-generated feedback and correctness score
 
-🔹 Optionally, reveal the complete correct solution
+Reveal the complete solution if desired
